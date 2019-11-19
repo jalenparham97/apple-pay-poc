@@ -105,7 +105,7 @@ function App() {
     if (window.ApplePaySession && window.ApplePaySession.canMakePayments()) {
         return <div onClick={() => beginPayment()} className="apple-pay-button-with-text apple-pay-button-black"></div>
     } else {
-      return <div>apple pay not supported</div>
+      return <div className="error-div">apple pay not supported</div>
     }
   }
   
