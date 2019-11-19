@@ -1,8 +1,12 @@
 @supports (-webkit-appearance: -apple-pay-button) { 
-  .apple-pay-button {
+  .apple-pay-button-with-text {
       display: inline-block;
       cursor: pointer;
       -webkit-appearance: -apple-pay-button;
+      -apple-pay-button-type: buy;
+      display: flex;
+      margin: 0 auto;
+      width: 300px;
   }
   .apple-pay-button-black {
       -apple-pay-button-style: black;
@@ -13,4 +17,8 @@
   .apple-pay-button-white-with-line {
       -apple-pay-button-style: white-outline;
   }
+}
+
+h1 {
+    text-align: center;
 }
